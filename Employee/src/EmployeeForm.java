@@ -111,6 +111,7 @@ public class EmployeeForm extends JFrame {
 		JButton btnBack = new JButton("Back");
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				EmployeeManagement.main(new String[]{});
 				frame.dispose();
 			}
 		});

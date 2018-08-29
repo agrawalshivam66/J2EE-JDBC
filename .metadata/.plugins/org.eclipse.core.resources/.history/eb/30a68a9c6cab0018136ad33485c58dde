@@ -52,21 +52,21 @@ public class UpdateEmployee extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
-		JLabel EAddemployee = new JLabel("Update Employee");
-		EAddemployee.setForeground(Color.GRAY);
-		EAddemployee.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		JLabel lblAddemployee = new JLabel("Update Employee");
+		lblAddemployee.setForeground(Color.GRAY);
+		lblAddemployee.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		
-		JLabel E_ID = new JLabel("ID");
+		JLabel lbl_ID = new JLabel("ID");
 		
-		JLabel E_Name = new JLabel("Name:");
+		JLabel lbl_Name = new JLabel("Name:");
 		
-		JLabel E_designation = new JLabel("Designation");
+		JLabel lbl_designation = new JLabel("Designation");
 		
-		JLabel E_ctc = new JLabel("CTC");
+		JLabel lbl_ctc = new JLabel("CTC");
 		
-		JLabel E_Dob = new JLabel("Date of birth");
+		JLabel lbl_Dob = new JLabel("Date of birth");
 		
-		JLabel Edate_of_joining = new JLabel("Date of joining");
+		JLabel lbldate_of_joining = new JLabel("Date of joining");
 	
 		
 		textField = new JTextField();
@@ -111,7 +111,6 @@ public class UpdateEmployee extends JFrame {
 		JButton btnBack = new JButton("Back");
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				EmployeeManagement.main(new String[]{});
 				frame.dispose();
 			}
 		});
@@ -122,16 +121,16 @@ public class UpdateEmployee extends JFrame {
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(150)
-							.addComponent(EAddemployee))
+							.addComponent(lblAddemployee))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(18)
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING, false)
-								.addComponent(E_Name, GroupLayout.PREFERRED_SIZE, 37, GroupLayout.PREFERRED_SIZE)
-								.addComponent(E_ID)
-								.addComponent(E_designation, GroupLayout.PREFERRED_SIZE, 67, GroupLayout.PREFERRED_SIZE)
-								.addComponent(E_ctc, GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-								.addComponent(E_Dob, GroupLayout.PREFERRED_SIZE, 85, GroupLayout.PREFERRED_SIZE)
-								.addComponent(Edate_of_joining, GroupLayout.PREFERRED_SIZE, 85, GroupLayout.PREFERRED_SIZE))
+								.addComponent(lbl_Name, GroupLayout.PREFERRED_SIZE, 37, GroupLayout.PREFERRED_SIZE)
+								.addComponent(lbl_ID)
+								.addComponent(lbl_designation, GroupLayout.PREFERRED_SIZE, 67, GroupLayout.PREFERRED_SIZE)
+								.addComponent(lbl_ctc, GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+								.addComponent(lbl_Dob, GroupLayout.PREFERRED_SIZE, 85, GroupLayout.PREFERRED_SIZE)
+								.addComponent(lbldate_of_joining, GroupLayout.PREFERRED_SIZE, 85, GroupLayout.PREFERRED_SIZE))
 							.addGap(47)
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 								.addComponent(textField_4, GroupLayout.PREFERRED_SIZE, 167, GroupLayout.PREFERRED_SIZE)
@@ -153,30 +152,30 @@ public class UpdateEmployee extends JFrame {
 		gl_contentPane.setVerticalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_contentPane.createSequentialGroup()
-					.addComponent(EAddemployee)
+					.addComponent(lblAddemployee)
 					.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(E_ID)
+						.addComponent(lbl_ID)
 						.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(E_Name)
+						.addComponent(lbl_Name)
 						.addComponent(textField_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(E_designation)
+						.addComponent(lbl_designation)
 						.addComponent(textField_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(E_ctc)
+						.addComponent(lbl_ctc)
 						.addComponent(textField_3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-							.addComponent(E_Dob)
+							.addComponent(lbl_Dob)
 							.addComponent(textField_5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 						.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(Edate_of_joining)
+						.addComponent(lbldate_of_joining)
 						.addComponent(textField_4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addGap(30)
 					.addComponent(btnAddEmployee, GroupLayout.PREFERRED_SIZE, 31, GroupLayout.PREFERRED_SIZE)

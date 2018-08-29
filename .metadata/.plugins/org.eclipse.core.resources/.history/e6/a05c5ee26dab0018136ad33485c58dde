@@ -35,14 +35,14 @@ public static int update(String id,String name,String designation,String ctc,Str
 	int status=0;
 	try{
 		Connection con=DB.getConnection();
-		PreparedStatement ps=con.prepareStatement("update employee set  name=?, designation=?, ctc=?, dob=?, date of joining=? where id =?");
-		
-		ps.setString(1,name);
-		ps.setString(2,designation);
-		ps.setString(3,ctc);
-		ps.setString(4,dob);
-		ps.setString(5, date_of_joining);
-		ps.setString(6,id);
+		PreparedStatement ps=con.prepareStatement("update employee set id=?, name=?, designation=?, ctc=?, dob=?, date of joining=? where id is ?");
+		ps.setString(1,id);
+		ps.setString(2,name);
+		ps.setString(3,designation);
+		ps.setString(4,ctc);
+		ps.setString(5,dob);
+		ps.setString(6, date_of_joining);
+		ps.setString(7,id);
 		status=ps.executeUpdate();
 		con.close();
 	}catch(Exception e){System.out.println(e);}
