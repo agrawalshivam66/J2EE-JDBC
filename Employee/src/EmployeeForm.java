@@ -52,9 +52,9 @@ public class EmployeeForm extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
-		JLabel lblAddBooks = new JLabel("Add Employee");
-		lblAddBooks.setForeground(Color.GRAY);
-		lblAddBooks.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		JLabel lblAddemployee = new JLabel("Add Employee");
+		lblAddemployee.setForeground(Color.GRAY);
+		lblAddemployee.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		
 		JLabel lbl_ID = new JLabel("ID");
 		
@@ -121,7 +121,7 @@ public class EmployeeForm extends JFrame {
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(150)
-							.addComponent(lblAddBooks))
+							.addComponent(lblAddemployee))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(18)
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING, false)
@@ -152,7 +152,7 @@ public class EmployeeForm extends JFrame {
 		gl_contentPane.setVerticalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_contentPane.createSequentialGroup()
-					.addComponent(lblAddBooks)
+					.addComponent(lblAddemployee)
 					.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
 						.addComponent(lbl_ID)

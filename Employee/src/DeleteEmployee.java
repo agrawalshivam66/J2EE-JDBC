@@ -57,8 +57,7 @@ public class DeleteEmployee extends JFrame {
 				if(sid==null||sid.trim().equals("")){
 					JOptionPane.showMessageDialog(DeleteEmployee.this,"Id can't be blank");
 				}else{
-					int id=Integer.parseInt(sid);
-					int i=EmployeeDao.delete(id);
+					int i=EmployeeDao.delete(sid);
 					if(i>0){
 						JOptionPane.showMessageDialog(DeleteEmployee.this,"Record deleted successfully!");
 					}else{
