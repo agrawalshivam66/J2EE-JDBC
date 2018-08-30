@@ -58,7 +58,7 @@ public class EmployeeForm extends JFrame {
 		
 		JLabel lbl_ID = new JLabel("ID");
 		
-		JLabel lbl_Name = new JLabel("Name:");
+		JLabel lbl_Name = new JLabel("Name");
 		
 		JLabel lbl_designation = new JLabel("Designation");
 		

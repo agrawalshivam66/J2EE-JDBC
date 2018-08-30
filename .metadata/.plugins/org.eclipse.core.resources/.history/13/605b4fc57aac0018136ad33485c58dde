@@ -58,7 +58,7 @@ public class UpdateEmployee extends JFrame {
 		
 		JLabel E_ID = new JLabel("ID to update");
 		
-		JLabel E_Name = new JLabel("Name");
+		JLabel E_Name = new JLabel("Name:");
 		
 		JLabel E_designation = new JLabel("Designation");
 		

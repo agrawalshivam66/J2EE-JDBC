@@ -56,9 +56,9 @@ public class UpdateEmployee extends JFrame {
 		EAddemployee.setForeground(Color.GRAY);
 		EAddemployee.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		
-		JLabel E_ID = new JLabel("ID to update");
+		JLabel E_ID = new JLabel("ID");
 		
-		JLabel E_Name = new JLabel("Name");
+		JLabel E_Name = new JLabel("Name:");
 		
 		JLabel E_designation = new JLabel("Designation");
 		

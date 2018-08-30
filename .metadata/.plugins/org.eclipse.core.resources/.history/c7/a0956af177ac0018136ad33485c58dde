@@ -35,7 +35,8 @@ public static int update(String id,String name,String designation,String ctc,Str
 	int status=0;
 	try{
 		Connection con=DB.getConnection();
-		PreparedStatement ps=con.prepareStatement("update `employee` set `name`=?, `designation`=?, `ctc`=?, `dob`=?, `date of joining`=? where `id` = ?");
+		PreparedStatement ps=con.prepareStatement("update employee set  name="+name+", designation="+designation+", ctc="+ctc+", dob="+dob+", date of joining="+date_of_joining+
+				"where id="+id+;
 		
 		ps.setString(1,name);
 		ps.setString(2,designation);
